@@ -18,6 +18,11 @@ body {
   background-color: var(--Pale-blue);
   font-family: 'Red Hat Display', sans-serif;
   line-height: 1.5em;
+  height: 60vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .wrapper {
@@ -27,7 +32,7 @@ body {
   background-size: contain;
   display: flex;
   flex-direction: column;
-  margin: 100px auto 10px;
+  margin: auto;
   width: 420px;
   border-radius: 12px;
 }
@@ -35,8 +40,11 @@ body {
 .summary {
   color: var(--Dark-blue);
   margin-top: 250px;
+  font-size: 0.85rem;
+}
+
+h1 {
   font-weight: 900;
-  font-size: 1.5rem;
 }
 
 .description {
