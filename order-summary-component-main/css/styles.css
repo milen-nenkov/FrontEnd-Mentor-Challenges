@@ -1,0 +1,142 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--Pale-blue);
+  font-family: 'Red Hat Display', sans-serif;
+  line-height: 1.5em;
+}
+
+.wrapper {
+  background-color: white;
+  background-image: url(../images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto 10px;
+  width: 420px;
+  border-radius: 12px;
+}
+
+.summary {
+  color: var(--Dark-blue);
+  margin-top: 250px;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.description {
+  color: var(--Desaturated-blue);
+  margin: 25px 50px;
+}
+
+.price-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin: 0 50px 10px;
+  background-color: var(--Very-pale-blue);
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.plan {
+  text-align: start;
+  color: var(--Desaturated-blue)
+}
+
+.annual {
+  font-weight: 900;
+  color: var(--Dark-blue);
+  margin-left: -55px;
+}
+
+.change-link {
+  color: var(--Bright-blue);
+  text-align: end;
+  font-weight: 700;
+}
+
+.change-link:hover {
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.proceed {
+  color: white;
+  width: 320px;
+  font-weight: 700;
+  background-color: var(--Bright-blue);
+  margin: 20px auto;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 20px 20px -10px var(--Desaturated-blue)
+}
+
+.proceed:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.cancel {
+  margin: 10px auto 25px;
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+}
+
+.cancel:hover {
+  color: var(--Dark-blue);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+  }
+
+  .wrapper {
+    background-size: contain;
+    width: 330px;
+  }
+
+  .summary {
+    margin: 200px 50px 0;
+  }
+
+  .description {
+    margin: 25px 40px;
+  }
+
+  .price-card {
+    margin: 0 30px 20px;
+  }
+
+  .annual {
+    margin-left: -40px;
+  }
+
+  .proceed {
+    width: 300px;
+  }
+}
