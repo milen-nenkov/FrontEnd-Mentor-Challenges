@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repo](https://github.com/milen-nenkov/FrontEnd-Mentor-Challenges/tree/main/order-summary-component-main)
+- Live Site URL: [Vercel](https://front-end-mentor-challenges-nu.vercel.app/)
 
 ## My process
 
@@ -57,5 +57,5 @@ Will definitely need to focus on layouts again in future projects. I feel I have
 
 ## Author
 
-- Frontend Mentor - [@milen-nenkovame](https://www.frontendmentor.io/profile/milen-nenkov)
+- Frontend Mentor - [@milen-nenkov](https://www.frontendmentor.io/profile/milen-nenkov)
 - Twitter - [@NenkovMilen](https://twitter.com/NenkovMilen)
