@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repo](https://your-solution-url.com)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Solution URL: [GitHub Repo](https://github.com/milen-nenkov/FrontEnd-Mentor-Challenges/tree/main/nft-preview-card-component-main)
+- Live Site URL: [Vercel](https://nft-preview-card.vercel.app/)
 
 ## My process
 
