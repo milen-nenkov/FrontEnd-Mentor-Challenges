@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Main-BG-dark-blue: hsl(217, 54%, 11%);
+  --Card-BG-dark-blue: hsl(216, 50%, 16%);
+  --Line-dark-blue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --Outfit-font: 'Outfit', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 18px;
+  font-family: var(--Outfit-font);
+  background-color: var(--Main-BG-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 335px;
+  height: auto;
+  background-color: var(--Card-BG-dark-blue);
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-image {
+  width: 287px;
+  height: 287px;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 10px;
+  position: relative;
+}
+
+.main-image:hover {
+  background-image: linear-gradient(var(--Cyan), var(--Cyan)),url(../images/icon-view.svg), url(../images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%, 20%, 100%;
+  background-position: center;
+  background-blend-mode: soft-light, normal;
+}
+
+.header {
+  color: var(--White);
+  margin-top: 1.8rem;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.header:hover {
+  cursor: pointer;
+  color: var(--Cyan);
+}
+
+.description {
+  margin-top: 1rem;
+  color: var(--Soft-blue);
+  font-size: 0.9em;
+  font-weight: lighter;
+  line-height: 1.6rem;
+}
+
+.details {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.units {
+  color: var(--Cyan);
+  font-size: 0.9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unit-icon {
+  padding-right: 7px;
+}
+
+.time-left {
+  color: var(--Soft-blue);
+  font-size: 0.9em;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-icon {
+  padding-right: 7px;
+}
+
+.author {
+  border-top: 2px solid var(--Line-dark-blue);
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 2rem;
+  border-radius: 50%;
+  border: 1.5px solid var(--White);
+}
+
+.author-text {
+  padding-left: 1rem;
+  font-weight: lighter;
+  color: var(--Soft-blue);
+  font-size: 0.9em;
+}
+
+.author-name {
+  color: var(--White);
+  font-weight: 400;
+}
+
+.author-name:hover { 
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
