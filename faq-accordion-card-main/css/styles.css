@@ -1,0 +1,19 @@
+:root {
+  --Kumbh-Sans: 'Kumbh Sans', sans-serif;
+  --Soft-violet-background-color: hsl(273, 75%, 66%);
+  --Soft-blue-background-color: hsl(240, 73%, 65%);
+  --Very-dark-grayish-blue-text: hsl(237, 12%, 33%);
+  --Dark-grayish-blue-text: hsl(240, 6%, 50%);
+  --Light-grayish-blue-divider: hsl(240, 5%, 91%)
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--Kumbh-Sans);
+  font-size: 12px;
+}
