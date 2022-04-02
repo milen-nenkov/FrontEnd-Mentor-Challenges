@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Dark-Blue);
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+}
+
+#advice-card {
+  background-color: var(--Dark-Grayish-Blue);
+  width: 375px;
+  height: auto;
+  margin: 10rem auto;
+  position: relative;
+}
+
+#advice-number {
+  color: var(--Neon-Green);
+  letter-spacing: 6px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+
+#advice-body {
+  color: var(--Light-Cyan);
+  font-size: 28px;
+  padding: 1rem 1rem 2rem;
+}
+
+#separator {
+  margin: auto;
+  padding-bottom: 3rem;
+}
+
+#random-advice {
+  background-color: var(--Neon-Green);
+  border-radius: 50%;
+  border: none;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: -30px;
+  right: 158px;
+}
+
+#random-advice > img {
+  margin-top: 3px;
+  margin-left: 1px;
+}
+
+#random-advice:hover {
+  cursor: pointer;
+  box-shadow: 0 0 15px var(--Neon-Green);
+}
+
+@media (min-width: 520px) {
+  body {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  #advice-card {
+    width: 500px;
+  }
+
+  #mobile-separator {
+    display: none;
+  }
+
+  #desktop-separator {
+    display: block;
+    margin: auto;
+  }
+
+  #random-advice {
+    right: 220px;
+  }
+}
