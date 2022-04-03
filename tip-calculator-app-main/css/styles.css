@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+  /* === FONT === */
+  --Space-Mono-Font: 'Space Mono', monospace;
+  --Font-Size: 24px;
+
+  /* === COLORS === */
+  --Strong-Cyan: hsl(172, 67%, 45%);
+  --Very-Dark-Cyan: hsl(183, 100%, 15%);
+  --Dark-Grayish-Cyan: hsl(186, 14%, 43%);
+  --Light-Grayish-Cyan: hsl(185, 41%, 84%);
+  --Grayish-Cyan: hsl(184, 14%, 56%);
+  --Very-Light-Grayish-Cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+
+  /* === WIDTHS === */
+  --Mobile-Width: 375px;
+  --Desktop-Width: 1440px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--Space-Mono-Font);
+  background-color: var(--Light-Grayish-Cyan);
+  text-align: center;
+}
+
+input {
+  color: var(--Very-Dark-Cyan);
+  font-size: var(--Font-Size);
+  font-family: var(--Space-Mono-Font);
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--Very-Light-Grayish-Cyan);
+  width: 100%;
+  height: 45px;
+  text-align: end;
+  padding: 1rem;
+}
+
+input:focus {
+  outline: 2px solid var(--Strong-Cyan);
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+p {
+  color: var(--Dark-Grayish-Cyan);
+}
+
+::placeholder {
+  color: var(--Dark-Grayish-Cyan);
+}
+
+.calculator {
+  text-align: start;
+  background-color: var(--White);
+  margin: auto;
+  max-width: var(--Mobile-Width);
+  width: 95vw;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.logo {
+  margin: 5% auto;
+}
+
+.bill {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.bill-text {
+  margin-bottom: 0.3rem;
+}
+
+.dollar-icon {
+  position: absolute;
+  left: 4%;
+  top: 42px;
+}
+
+.tip {
+  margin-bottom: 1.8rem;
+}
+
+.tip-select {
+  margin-bottom: 0.5rem;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.tip-btn {
+  font-family: var(--Space-Mono-Font);
+  font-size: var(--Font-Size);
+  background-color: var(--Very-Dark-Cyan);
+  color: var(--Very-Light-Grayish-Cyan);
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+}
+
+.tip-btn:hover {
+  color: var(--Very-Dark-Cyan);
+  background-color: var(--Strong-Cyan);
+}
+
+.tip-btn-active {
+  color: var(--Very-Dark-Cyan);
+  background-color: var(--Strong-Cyan);
+}
