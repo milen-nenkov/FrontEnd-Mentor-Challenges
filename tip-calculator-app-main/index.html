@@ -23,44 +23,54 @@
         <div class="bill">
           <p class="bill-text">Bill</p>
           <span class="dollar-icon"
-            ><img src="images/icon-dollar.svg" alt=""
+            ><img src="images/icon-dollar.svg" alt="Dollar Icon"
           /></span>
-          <input type="text" class="bill-input" placeholder="0" />
+          <input type="number" class="bill-input" min="0" placeholder="0" />
         </div>
         <div class="tip">
           <p class="tip-select">Select Tip %</p>
           <div class="tips-grid">
-            <button class="tip-btn five-percent">5%</button>
-            <button class="tip-btn ten-percent">10%</button>
-            <button class="tip-btn fifteen-percent">15%</button>
-            <button class="tip-btn twenty-five-percent">25%</button>
-            <button class="tip-btn fifty-percent">50%</button>
-            <input type="text" class="custom-tip" placeholder="Custom" />
+            <button class="tip-btn five">5%</button>
+            <button class="tip-btn ten">10%</button>
+            <button class="tip-btn fifteen">15%</button>
+            <button class="tip-btn twenty-five">25%</button>
+            <button class="tip-btn fifty">50%</button>
+            <input
+              type="number"
+              class="custom-tip"
+              min="0"
+              max="100"
+              placeholder="Custom"
+            />
           </div>
         </div>
         <div class="people">
-          <p class="people-text">Number of People</p>
+          <div class="people-text">
+            <p class="people-description">Number of People</p>
+            <p class="people-warning"></p>
+          </div>
+          <span class="people-icon"
+            ><img src="images/icon-person.svg" alt="People Icon"
+          /></span>
 
-          <input type="text" class="people" placeholder="0" />
+          <input type="number" class="people" min="0" placeholder="0" />
         </div>
       </section>
       <section class="display">
         <div class="tip-per-person">
-          <p class="tip-each">
-            Tip Amount <br />
-            / person
-          </p>
-          <div class="tip-person">$0.00</div>
+          <p class="each">Tip Amount</p>
+          <p class="per-person">/ person</p>
         </div>
+        <div class="value tip-person">$0.00</div>
         <div class="total-per-person">
-          <p class="total-each">
-            Total <br />
-            / person
-          </p>
-          <div class="total-person">$0.00</div>
+          <p class="each">Total</p>
+          <p class="per-person">/ person</p>
         </div>
+        <div class="value total-person">$0.00</div>
 
-        <button class="reset">Reset</button>
+        <div class="reset">
+          <button class="reset-btn">Reset</button>
+        </div>
       </section>
     </main>
 

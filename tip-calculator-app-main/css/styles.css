@@ -39,7 +39,7 @@ input {
   overflow: hidden;
   background-color: var(--Very-Light-Grayish-Cyan);
   width: 100%;
-  height: 45px;
+  height: 55px;
   text-align: end;
   padding: 1rem;
 }
@@ -50,6 +50,12 @@ input:focus {
 
 input:hover {
   cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 p {
@@ -86,7 +92,7 @@ p {
 .dollar-icon {
   position: absolute;
   left: 4%;
-  top: 42px;
+  top: 47px;
 }
 
 .tip {
@@ -108,17 +114,74 @@ p {
   font-size: var(--Font-Size);
   background-color: var(--Very-Dark-Cyan);
   color: var(--Very-Light-Grayish-Cyan);
-  height: 45px;
+  height: 55px;
   border: none;
   border-radius: 5px;
 }
 
 .tip-btn:hover {
   color: var(--Very-Dark-Cyan);
-  background-color: var(--Strong-Cyan);
+  background-color: var(--Light-Grayish-Cyan);
+  cursor: pointer;
 }
 
 .tip-btn-active {
   color: var(--Very-Dark-Cyan);
   background-color: var(--Strong-Cyan);
+}
+
+.people {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.people-text {
+  margin-bottom: 0.3rem;
+}
+
+.people-icon {
+  position: absolute;
+  left: 4%;
+  top: 47px;
+  z-index: 2;
+}
+
+.display {
+  background-color: var(--Very-Dark-Cyan);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+}
+
+.each {
+  color: var(--Light-Grayish-Cyan);
+}
+
+.value {
+  text-align: end;
+  color: var(--Strong-Cyan);
+  font-size: 2rem;
+}
+
+.reset {
+  grid-column: span 2;
+}
+
+.reset-btn {
+  width: 100%;
+  height: 55px;
+  background-color: var(--Strong-Cyan);
+  color: var(--Very-Dark-Cyan);
+  text-transform: uppercase;
+  font-size: larger;
+  font-family: var(--Space-Mono-Font);
+  border: none;
+  border-radius: 5px;
+}
+
+.reset-btn:hover {
+  background-color: var(--Light-Grayish-Cyan);
+  cursor: pointer;
 }
